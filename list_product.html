@@ -1,0 +1,265 @@
+<!-- =========================================header======================================== -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MANAGER SMARTSHOP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="public/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="public/css/bootstrap/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="public/reset.css" rel="stylesheet" type="text/css" />
+    <link href="public/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="public/style.css" rel="stylesheet" type="text/css" />
+    <link href="public/responsive.css" rel="stylesheet" type="text/css" />
+    <script src="public/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script src="public/js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+    <script src="public/js/plugins/ckeditor/ckeditor.js" type="text/javascript"></script>
+    <script src="public/js/main.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="site">
+        <div id="header-wp">
+            <div class="wp-inner clearfix">
+                <a href="admin.html" title="" id="logo" class="fl-left">SMART SHOP</a>
+                <ul id="main-menu" class="fl-left">
+                    <li>
+                        <a href="admin.html" title="">Trang chủ</a>
+
+                    </li>
+                    <li>
+                        <a href="list_product.html" title="">Sản phẩm</a>
+                    </li>
+                    <li>
+                        <a href="kh.html" title="">Khách hàng</a>
+
+                    </li>
+                    <li>
+                        <a href="" title="">Đơn hàng</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="quanlidhtc.html" title="">Đơn hàng thành công</a>
+                            </li>
+                            <li>
+                                <a href="quanlidhtb.html" title="">Đơn hàng cần xử lý</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+                <div id="dropdown-user" class="dropdown dropdown-extended fl-right">
+                    <button class="dropdown-toggle clearfix" type="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="true">
+
+                        <h3 id="account" class="fl-right">Admin</h3>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="admin_in4.html" title="Thông tin cá nhân">Thông
+                                tin tài khoản</a></li>
+                        <li><a href="#" title="Thoát">Thoát</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- ========================================slider====================================== -->
+        <div id="main-content-wp" class="info-account-page">
+            <div class="wrap clearfix">
+                <div id="sidebar" class="fl-left">
+                    <ul id="sidebar-menu">
+                        <li class="nav-item">
+                            <a href="" title="" class="nav-link nav-toggle">
+                                <span class="fa fa-product-hunt icon"></span>
+                                <span class="title">Quản lý sản phẩm</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item">
+                                    <a href="add_product.html" title="" class="nav-link aha">Thêm mới</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="list_product.html" title="" class="nav-link aha">Danh sách</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" title="" class="nav-link nav-toggle">
+                                <span class="fa fa-pencil-square-o icon"></span>
+                                <span class="title">Quản lý thông tin</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item">
+                                    <a href="kh.html" title="" class="nav-link aha">Khách hàng</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="admin_in4.html" title="" class="nav-link aha">Cá nhân</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" title="" class="nav-link nav-toggle">
+                                <span class="fa fa-database icon"></span>
+                                <span class="title">Quản lý bán hàng</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item">
+                                    <a href="quanlidhtb.html" title="" class="nav-link aha">Danh sách đơn hàng cần
+                                        xử lý</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="quanlidhtc.html" title="" class="nav-link aha">Danh sách đơn hàng thành
+                                        công</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- ================================================================================================= -->
+
+
+
+                <div id="content" class="fl-right">
+                    <div class="section" id="title-page">
+                        <div class="clearfix">
+                            <h3 id="index" class="fl-left">Danh sách sản phẩm</h3>
+                            <a href="add_product.html" title="" id="add-new" class="fl-left">Thêm mới</a>
+                        </div>
+                    </div>
+                    <div class="section" id="detail-page">
+                        <div class="section-detail">
+                            <div class="table-responsive">
+                                <table class="table list-table-wp">
+                                    <thead>
+                                        <tr>
+                                            <td><input type="checkbox" name="checkAll" id="checkAll"></td>
+                                            <td><span class="thead-text">STT</span></td>
+                                            <td><span class="thead-text">Mã sản phẩm</span></td>
+                                            <td><span class="thead-text">Hình ảnh</span></td>
+                                            <td><span class="thead-text">Tên sản phẩm</span></td>
+                                            <td><span class="thead-text">Giá</span></td>
+                                            <td><span class="thead-text">Khuyến mại</span></td>
+                                            <td><span class="thead-text">Số lượng</span></td>
+                                            <td><span class="thead-text">Trạng thái</span></td>
+                                            <td><span class="thead-text">Độ hot</span></td>
+                                            <td><span class="thead-text">Danh mục</span></td>
+                                            <td><span class="thead-text">Thương hiệu</span></td>
+                                            <td><span class="thead-text">Người tạo</span></td>
+                                            <td><span class="thead-text">Thời gian</span></td>
+                                            <td><span class="thead-text">Hoàn tác</span></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr>
+                                            <td><input type="checkbox" name="checkItem" class="checkItem"></td>
+                                            <td><span class="tbody-text">1</span></td>
+                                            <td><span class="tbody-text">#phone01</span></td>
+                                            <td>
+                                                <div class="tbody-thumb">
+                                                    <img src="public/uploads/phone01.jpg" alt="">
+                                                </div>
+                                            </td>
+                                            <td><span class="tbody-text">iPhone 14 Pro Max 1TB</span></td>
+                                            <td><span class="tbody-text">49990000</span></td>
+                                            <td><span class="tbody-text">48990000</span></td>
+                                            <td><span class="tbody-text">10</span></td>
+                                            <td><span class="tbody-text">còn hàng</span></td>
+                                            <td><span class="tbody-text">hot</span></td>
+                                            <td><span class="tbody-text">Điện Thoại</span></td>
+                                            <td><span class="tbody-text">Apple</span></td>
+                                            <td><span class="tbody-text">admin</span></td>
+                                            <td><span class="tbody-text">28/11/2022</span></td>
+                                            <td>
+                                                <ul class="list-operation ">
+                                                    <li><a href="edit.html" title="Sửa" class="edit"><i
+                                                                class="fa fa-pencil" aria-hidden="true"></i></a></li>
+                                                    <li><a onclick="return Del()" href="#" title="Xóa" class="delete"><i
+                                                                class="fa fa-trash" aria-hidden="true"></i></a></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><input type="checkbox" name="checkItem" class="checkItem"></td>
+                                            <td><span class="tbody-text">2</span></td>
+                                            <td><span class="tbody-text">#phone02</span></td>
+                                            <td>
+                                                <div class="tbody-thumb">
+                                                    <img src="public/uploads/phone02.jpg" alt="">
+                                                </div>
+                                            </td>
+                                            <td><span class="tbody-text">iPhone 14 Pro 512GB</span></td>
+                                            <td><span class="tbody-text">40990000</span></td>
+                                            <td><span class="tbody-text">36990000</span></td>
+                                            <td><span class="tbody-text">10</span></td>
+                                            <td><span class="tbody-text">còn hàng</span></td>
+                                            <td><span class="tbody-text">hot</span></td>
+                                            <td><span class="tbody-text">Điện Thoại</span></td>
+                                            <td><span class="tbody-text">Apple</span></td>
+                                            <td><span class="tbody-text">admin</span></td>
+                                            <td><span class="tbody-text">28/11/2022</span></td>
+                                            <td>
+                                                <ul class="list-operation ">
+                                                    <li><a href="edit.html" title="Sửa" class="edit"><i
+                                                                class="fa fa-pencil" aria-hidden="true"></i></a></li>
+                                                    <li><a onclick="return Del()" href="#" title="Xóa" class="delete"><i
+                                                                class="fa fa-trash" aria-hidden="true"></i></a></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section" id="paging-wp">
+                        <div class="section-detail clearfix">
+                            <ul id="list-paging" class="fl-right">
+                                <li>
+                                    <a href="#" title="">1</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">2</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">3</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">4</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">5</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function Del() {
+                return confirm("Bạn có chắn chắn xóa không ?");
+            }
+        </script>
+
+        <!-- ========================footer=========================== -->
+        <div id="footer-wp">
+            <div class="wp-inner">
+                <p id="copyright">2022 © MANAGER SMARTSHOP</p>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
